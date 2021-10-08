@@ -1,0 +1,30 @@
+
+{% extends 'trainer/in_base.html' %}
+
+
+
+
+{% block title %}Add Trainer{% endblock %}
+
+{% block content %}
+<h2 style="width: 700px; margin: auto">Adding Trainer</h2>
+<br>
+
+<br>
+
+<!-- create a new trainer form-->
+<form method="POST"  style="width: 700px; margin: auto" >
+    {% csrf_token %}
+    <label for="first_name"><b>Frist Name:</b></label>
+    <input class="form-control" type="text" name="first_name" ><br>
+    <label for="last_name"><b>Last Name:</b></label>
+    <input class="form-control" type="text" name="last_name" ><br>
+    <label for="object"><b>Object:</b></label>
+    <input class="form-control" type="text" name="object" ><br>
+    <label for="description"><b>Description:</b></label>
+    <input class="form-control" type="text" name="description" ><br>
+    
+
+    <br>
+    <button type="submit" class="btn btn-primary">Add</button>
+{% endblock %}

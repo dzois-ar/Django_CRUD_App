@@ -1,0 +1,17 @@
+{% extends 'trainer/in_base.html' %}
+
+{% block title %}{{trainer.first_name}}  {{trainer.last_name}}{% endblock title %}
+
+<!-- read trainers details -->
+{% block content %}
+<h2>Frist Name: {{trainer.first_name}}</h2>
+<h2>Last  Name:{{trainer.last_name}}</h2>
+<h2>Object:{{trainer.object}}</h2>
+<br>
+<h2>Details:</h2>
+<p>{{trainer.description}}</p>
+<br>
+
+<a href="/trainer/update_trainer/{{trainer.id}}/">Update</a>
+<a href="/trainer/delete_trainer/{{trainer.id}}/">Delete</a>
+{% endblock content %}

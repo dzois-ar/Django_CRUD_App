@@ -1,0 +1,93 @@
+
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">         
+    <link rel="stylesheet" type="text/css" href="{% static 'css/table.css' %}">
+{% endblock css %}
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}Trainers{% endblock %}
+        </title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        {% block header %}
+            <div class="header">
+                <a href="/trainer/all_trainer/" class="logo">Trainers</a>
+                <div class="header-right">
+                <a class="active" href="/trainer/add_trainer/">Add Trainer</a>
+                
+                </div>
+                
+                
+            </div>
+
+            
+
+        {% endblock %}
+
+        <div class="content-table">
+           
+                
+                {% block content %}
+                    {% if message is not None %}
+                            <h2>{{ message }}</h2>
+                    {% else %}        
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th><br>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Object</th>
+
+                                
+                            </tr>
+
+
+                        </thead>
+                        <tbody>
+                            {% for trainer in trainers %}
+                            <tr>
+                                <td>{{trainer.id}}</td>
+                                <td>{{trainer.first_name}}</td>
+                                <td>{{trainer.last_name}}</td>
+                                <td>{{trainer.object}}</td>
+
+                                 <td><a href="/trainer/trainer-details/{{trainer.id}}/">Details</a></td>
+                                <td><a href="/trainer/update_trainer/{{trainer.id}}/">Update</a></td>
+                                <td><a href="/trainer/delete_trainer/{{trainer.id}}/">Delete</a></td>
+
+
+
+                            </tr>
+                            {% endfor %}
+                            
+                           
+                        </tbody>
+
+
+
+
+                    </table>
+                    
+                        
+                       <a class="active" href="/trainer/add_trainer/">Add Trainer</a>
+                    {% endif %} 
+                {% endblock content %}
+        <div class="footer">
+            <div style="margin-top: 1rem;">
+                <p>Trainers</p>
+            </div>
+        </div>
+
+        <br><br><br>
+    </body>
+</html>
