@@ -2,17 +2,21 @@
 
 To run this project in your computer, follow the steps below
 -------------------------------------------------------------
+
+Create virtual environment: virtualenv venv
+
 Step 1. Make and activate virtual Environment in your computer
 -------------------------------------------------------------
     In windows
-    > virtualenv ecom
+    > virtualenv venv
     > Scripts\activate
     In mac and linux
-    $ virtualenv ecom
+    $ virtualenv venv 
     $ source bin/activate
 
 Step 2. Clone the project
-    $ git clone 
+-------------------------------------------------------------
+    $ git clone https://github.com/dzois-ar/dzois-ar-Django_CRUD_App.git
     $ cd ecomtuts
     if you donot have git in your computer, install it before and clone it again.
 
