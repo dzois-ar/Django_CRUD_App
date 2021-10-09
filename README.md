@@ -17,23 +17,32 @@ Step 1. Make and activate virtual Environment in your computer
 Step 2. Clone the project
 -------------------------------------------------------------
     $ git clone https://github.com/dzois-ar/dzois-ar-Django_CRUD_App.git
-    $ cd ecomtuts
+ 
     if you donot have git in your computer, install it before and clone it again.
 
 Step 3: Install dependencies 
+-------------------------------------------------------------
     $ pip install -r requirements.txt
     or 
     $ pip install django pillow requests six
 
 Step 4: Apply the migration if any
+-------------------------------------------------------------
     $ python manage.py migrate
 
 
 Step 5: You can now open project folder in your editor
+-------------------------------------------------------------
 
 Step 6: Run Development server
+-------------------------------------------------------------
     $ python manage.py runserver
 
+Step : Run project for url: http://localhost:8000/trainer/all_trainer/
+-------------------------------------------------------------
 
-Now you can modify the code and data
-Make better design to make your project more stunning. 
+![09 10 2021_19 56 48_REC](https://user-images.githubusercontent.com/80916754/136668342-e23928fd-fa49-4eba-b70b-6ca889570b2f.png)
+
+
+
+
