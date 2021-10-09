@@ -11,7 +11,7 @@ Step 1. Make and activate virtual Environment in your computer
     $ source bin/activate
 
 Step 2. Clone the project
-    $ git clone https://gitlab.com/ecedreamer/ecomtuts.git
+    $ git clone 
     $ cd ecomtuts
     if you donot have git in your computer, install it before and clone it again.
 
