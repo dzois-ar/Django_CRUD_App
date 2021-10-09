@@ -3,6 +3,7 @@
 To run this project in your computer, follow the steps below
 -------------------------------------------------------------
 Step 1. Make and activate virtual Environment in your computer
+-------------------------------------------------------------
     In windows
     > virtualenv ecom
     > Scripts\activate
