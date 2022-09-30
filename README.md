@@ -20,10 +20,10 @@ Step 2. Clone the project
  
     if you donot have git in your computer, install it before and clone it again.
 
-Step 3: Install dependencies 
+Step 3: Install requirements  
 -------------------------------------------------------------
      pip install -r requirements.txt
-    or 
+                or 
      pip install django pillow requests six
 
 Step 4: Apply the migration if any
@@ -38,8 +38,11 @@ Step 6: Run Development server
 -------------------------------------------------------------
      python manage.py runserver
 
-Step 7: Run project for url: http://localhost:8000/trainer/all_trainer/
+-->Then, the development server will be started at: http://localhost:8000/trainer/all_trainer/
+
+App Preview :
 -------------------------------------------------------------
+
 
 
 ![09 10 2021_19 56 48_REC](https://user-images.githubusercontent.com/80916754/136668342-e23928fd-fa49-4eba-b70b-6ca889570b2f.png)
