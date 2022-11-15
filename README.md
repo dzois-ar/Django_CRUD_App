@@ -7,10 +7,10 @@ Create virtual environment: virtualenv venv
 
 Step 1. Make and activate virtual Environment in your computer
 -------------------------------------------------------------
-    **In windows**
+    In windows
     > virtualenv venv
     > Scripts\activate
-    **In mac and linux**
+    In mac and linux
     $ virtualenv venv 
     $ source bin/activate
 
