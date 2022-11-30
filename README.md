@@ -40,7 +40,7 @@ Step 6: Run Development server
 
 -->Then, the development server will be started at: http://localhost:8000/trainer/all_trainer/
 
-App Preview :
+:camera:  App Preview :
 -------------------------------------------------------------
 
 
